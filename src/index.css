@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+    
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 217 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 217 30% 70%;
+    --secondary-foreground: 217 90% 15%;
+    
+    --tertiary: 36 95% 55%;
+    --tertiary-foreground: 0 0% 10%;
+    
+    --neutral: 0 0% 10%;
+    --neutral-foreground: 0 0% 98%;
+    
+    --muted: 0 0% 17%;
+    --muted-foreground: 0 0% 60%;
+    
+    --accent: 217 85% 45%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 217 85% 60%;
+    
+    --success: 145 60% 45%;
+    --warning: 30 100% 50%;
+    
+    --gray-50: 0 0% 98%;
+    --gray-100: 0 0% 92%;
+    --gray-200: 0 0% 80%;
+    --gray-300: 0 0% 60%;
+    --gray-400: 0 0% 45%;
+    --gray-500: 0 0% 35%;
+    --gray-600: 0 0% 25%;
+    --gray-700: 0 0% 17%;
+    --gray-800: 0 0% 12%;
+    --gray-900: 0 0% 8%;
+    
+    --radius: 0.5rem;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  html,
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+    cursor: none;
+  }
+  
+  @media (max-width: 768px) {
+    html,
+    body {
+      cursor: auto;
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Geist", sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-1 {
+    background: linear-gradient(135deg, hsl(217, 85%, 45%), hsl(36, 95%, 55%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+}

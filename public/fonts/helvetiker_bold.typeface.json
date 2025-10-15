@@ -1,0 +1,32 @@
+{
+  "glyphs": {},
+  "familyName": "Helvetiker",
+  "ascender": 1,
+  "descender": 0,
+  "underlinePosition": 0,
+  "underlineThickness": 0,
+  "boundingBox": {
+    "yMin": 0,
+    "xMin": 0,
+    "yMax": 1,
+    "xMax": 1
+  },
+  "resolution": 1000,
+  "original_font_information": {
+    "format": 0,
+    "copyright": "",
+    "fontFamily": "Helvetiker",
+    "fontSubfamily": "Bold",
+    "uniqueID": "Helvetiker Bold",
+    "fullName": "Helvetiker Bold",
+    "version": "Version 1.0",
+    "postScriptName": "Helvetiker-Bold",
+    "trademark": "",
+    "manufacturer": "",
+    "designer": "",
+    "manufacturerURL": "",
+    "designerURL": "",
+    "licence": "",
+    "licenceURL": ""
+  }
+}
